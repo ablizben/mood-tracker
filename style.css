@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 h1,
 h2 {
   font-family: "Rock Salt", cursive;
   text-align: center;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
 }
 
 /* Grid-related CSS */
@@ -155,4 +160,15 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 5;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
 }

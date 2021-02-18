@@ -50,8 +50,33 @@
     <div class="modal hidden">
         <button class="close-modal">&times;</button>
         <h2>How are you feeling today?</h2>
-        <p>Options
+        <p>
+        <div class="form-group">
+            <p>How would you describe your mood today?</p>
+            <select id="dropdown" name="chosen-mood" class="form-control" required>
+                <option disabled selected value>Select your mood</option>
+                <option value="cheerful">Cheerful</option>
+                <option value="gloomy">Gloomy</option>
+                <option value="calm">Calm</option>
+                <option value="angry">Angry</option>
+                <option value="fearful">Fearful</option>
+                <option value="meh">Meh</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>What do you think is impacting your mood? <span class="clue">(Check all that apply)</span></p>
+            <label><input name="impact" value="work" type="checkbox" class="input-checkbox" />Work</label>
+            <label><input name="impact" value="career" type="checkbox" class="input-checkbox" />Career</label>
+            <label><input name="impact" value="family" type="checkbox" class="input-checkbox" />Family</label>
+            <label><input name="impact" value="relation" type="checkbox" class="input-checkbox" />Romantic
+                Relationship</label>
+            <label><input name="impact" value="physical" type="checkbox" class="input-checkbox" />Physical
+                Health</label>
+            <label><input name="impact" value="mental" type="checkbox" class="input-checkbox" />Mental Health</label>
+            <label><input name="impact" value="other" type="checkbox" class="input-checkbox" />Other</label>
 
+        </div>
+        </form>
         </p>
     </div>
     <div class="overlay hidden"></div>

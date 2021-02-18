@@ -1,5 +1,4 @@
 // Add squares
-
 const squares = document.querySelector('.squares');
 for (var i = 1; i < 365; i++) {
     const level = Math.floor(Math.random() * 3);
@@ -9,7 +8,6 @@ for (var i = 1; i < 365; i++) {
 //window to input mood data
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
-// const btnOpenSquare = document.querySelector('.li');
 const btnCloseModal = document.querySelector('.close-modal');
 const btnsOpenModal = document.querySelectorAll('.show-modal');
 
@@ -27,3 +25,6 @@ btnCloseModal.addEventListener('click', function () {
     overlay.classList.add('hidden');
 
 })
+
+//if enter sad or gloomy, pop up message that it will get better
+//if enter happy, pop up message that I'm glad you're having a good day
