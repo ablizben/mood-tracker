@@ -1,5 +1,3 @@
-'use strict';
-
 // Add squares
 
 const squares = document.querySelector('.squares');

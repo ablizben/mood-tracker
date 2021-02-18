@@ -1,4 +1,9 @@
-/* Article - https://bitsofco.de/github-contribution-graph-css-grid/ */
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
+h1 {
+  font-family: "Rock Salt", cursive;
+  text-align: center;
+}
 
 /* Grid-related CSS */
 
@@ -42,6 +47,7 @@
     calc(var(--week-width) * 5) /* Oct */
     calc(var(--week-width) * 4) /* Nov */
     calc(var(--week-width) * 5) /* Dec */;
+  list-style-type: none;
 }
 
 .days,
@@ -49,11 +55,13 @@
   display: grid;
   grid-gap: var(--square-gap);
   grid-template-rows: repeat(7, var(--square-size));
+  list-style-type: none;
 }
 
 .squares {
   grid-auto-flow: column;
   grid-auto-columns: var(--square-size);
+  list-style-type: none;
 }
 
 /* Other styling */
