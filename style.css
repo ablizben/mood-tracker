@@ -176,3 +176,10 @@ label {
   margin: 0 auto 1.25rem auto;
   padding: 0.25rem;
 }
+
+.color-key {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 15px;
+}
