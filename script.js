@@ -10,6 +10,7 @@ const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 const btnCloseModal = document.querySelector('.close-modal');
 const btnsOpenModal = document.querySelectorAll('.show-modal');
+const btnSubmit = document.querySelector('#submit-btn');
 
 
 //open data input window
@@ -25,6 +26,14 @@ btnCloseModal.addEventListener('click', function () {
     overlay.classList.add('hidden');
 
 })
+
+btnSubmit.addEventListener('click', function () {
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
+
+})
+
+
 
 //if enter sad or gloomy, pop up message that it will get better
 //if enter happy, pop up message that I'm glad you're having a good day

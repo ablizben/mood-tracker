@@ -11,10 +11,13 @@ body {
     rgb(163, 114, 255),
     rgba(255, 167, 180)
   );
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
-h2 {
+h2,
+#submit-btn {
   font-family: "Rock Salt", cursive;
   text-align: center;
 }
@@ -83,7 +86,6 @@ h2 {
 /* Other styling */
 
 .graph {
-  padding: 20px;
   border: 1px #e1e4e8 solid;
   margin: 20px;
 }
@@ -94,6 +96,7 @@ h2 {
 
 .squares li {
   background-color: #ebedf0;
+  flex-direction: column;
 }
 
 .squares li:hover {
@@ -155,6 +158,14 @@ h2 {
   z-index: 10;
 }
 
+#submit-btn {
+  box-shadow: 0 4px 10px 5px rgb(0 0 0 / 12%);
+}
+
+#submit-btn:hover {
+  cursor: pointer;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -182,4 +193,10 @@ label {
   justify-content: center;
   background-color: white;
   border-radius: 15px;
+  max-width: 250px;
+  align-items: center;
+}
+
+.color-key li {
+  list-style-type: none;
 }
