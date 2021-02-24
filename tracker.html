@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mood Tracker</title>
+
+</head>
+
+
+
+<header>
+    <h1>Mood Tracker</h1>
+</header>
+
+<body>
+
+    <div class="graph">
+        <ul class="months">
+            <li>Jan</li>
+            <li>Feb</li>
+            <li>Mar</li>
+            <li>Apr</li>
+            <li>May</li>
+            <li>Jun</li>
+            <li>Jul</li>
+            <li>Aug</li>
+            <li>Sep</li>
+            <li>Oct</li>
+            <li>Nov</li>
+            <li>Dec</li>
+        </ul>
+        <ul class="days">
+            <li>Sun</li>
+            <li>Mon</li>
+            <li>Tue</li>
+            <li>Wed</li>
+            <li>Thu</li>
+            <li>Fri</li>
+            <li>Sat</li>
+        </ul>
+        <ul class="squares">
+            <!-- added via javascript -->
+        </ul>
+    </div>
+
+    <div class="color-key">
+        <ul>
+            <li>Cheerful = Yellow</li>
+            <li>Gloomy = Dark Blue</li>
+            <li>Calm = Ocean Blue</li>
+            <li>Angry = Red</li>
+            <li>Fearful = Orange</li>
+            <li>Meh = Gray</li>
+        </ul>
+    </div>
+
+    <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h2>How are you feeling today?</h2>
+        <p>
+        <div class="form-group">
+            <p>How would you describe your mood today?</p>
+            <select id="dropdown" name="chosen-mood" class="form-control" required>
+                <option disabled selected value>Select your mood</option>
+                <option value="cheerful">Cheerful</option>
+                <option value="gloomy">Gloomy</option>
+                <option value="calm">Calm</option>
+                <option value="angry">Angry</option>
+                <option value="fearful">Fearful</option>
+                <option value="meh">Meh</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>What do you think is impacting your mood? <span class="clue">(Check all that apply)</span></p>
+            <label><input name="impact" value="work" type="checkbox" class="input-checkbox" />Work</label>
+            <label><input name="impact" value="career" type="checkbox" class="input-checkbox" />Career</label>
+            <label><input name="impact" value="family" type="checkbox" class="input-checkbox" />Family</label>
+            <label><input name="impact" value="relation" type="checkbox" class="input-checkbox" />Romantic
+                Relationship</label>
+            <label><input name="impact" value="physical" type="checkbox" class="input-checkbox" />Physical
+                Health</label>
+            <label><input name="impact" value="mental" type="checkbox" class="input-checkbox" />Mental Health</label>
+            <label><input name="impact" value="other" type="checkbox" class="input-checkbox" />Other</label>
+
+        </div>
+
+        <button id="submit-btn">Submit</button>
+        </form>
+        </p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="./tracker.js"></script>
+</body>
+
+</html>
