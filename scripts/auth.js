@@ -6,7 +6,7 @@ signupForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
     //get user info
-    const email = signupForm['signup-email.'].value;
+    const email = signupForm['signup-email'].value;
     const password = signupForm['signup-password'].value;
 
     // sign up the user
@@ -16,4 +16,13 @@ signupForm.addEventListener('submit', (e) => {
         M.Modal.getInstance(modal).close();
         signupForm.reset();
     });
+});
+
+// logout
+const logout = document.querySelector('#logout');
+logout.addEventListener('click', (e) => {
+    e.preventDefault();
+    auth.signOut().then(() => {
+        console.log('user signed out');
+    })
 });
